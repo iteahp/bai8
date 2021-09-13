@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành toán tử 3 ngôi</title>
+</head>
+<body>
+<h1>Bài 1</h1>
+<button onclick="toantu()">Ấn vào đây</button>
+<br>
+<br>
+<h1>Bài 2</h1>
+<button onclick="toantu2()">Ấn vào đây</button>
+<script>
+function toantu(){
+    let a = prompt("nhập a : ")
+    let b = prompt("nhập b : ")
+    a = parseInt(a)
+    b = parseInt(b)
+    kq = a + b < 4 ? 'Below': 'Over' ;
+    alert(kq)
+}
+function toantu2() {
+    let login = prompt("Enter a login ")
+    let message = (login == 'Employee') ?
+        'Hello' :
+        (login == 'Director') ?
+            'Greetings' :
+            (login == '') ?
+                'No login' :
+                '';
+    alert(message)
+}
+</script>
+</body>
+</html>
