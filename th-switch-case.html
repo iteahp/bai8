@@ -8,16 +8,16 @@
 <script>
     let a = prompt("Nhập số :", 0)
     a = parseInt(a)
-    switch (a) {
-        case (5):
+    let check = a > 0 ? "Positive":a < 0 ? "Negative" : "0"
+    switch (check) {
+        case ("Positive"):
             alert(1);
             break;
-        case 0:
-            alert(0);
-            break;
-        case (-5):
+        case ("Negative"):
             alert(-1);
             break;
+        default :
+            alert(0)
     }
 </script>
 </body>
