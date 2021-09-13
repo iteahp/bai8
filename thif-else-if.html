@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành if else if</title>
+</head>
+<body>
+<script>
+    let tk = prompt("Nhập tài khoản vào đây : ", '');
+    if (tk == 'Admin') {
+        ;
+    } else if (tk == null) {
+        alert('Đã hủy ');
+    } else {
+        alert("Tôi không biết bạn !");
+    }
+    let pass = prompt('Mật khẩu là gì?', '')
+    if (pass == 'TheMaster') {
+        alert('Xin chào!');
+    } else if (pass == null) {
+        alert('Đã hủy.');
+    } else {
+        alert('Mật khẩu sai rồi !');
+    }
+</script>
+</body>
+</html>
